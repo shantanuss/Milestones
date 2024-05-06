@@ -1,0 +1,89 @@
+<header>
+  <!-- Upper part in orange color -->
+  <div class="upper-part">
+    <div class="container">
+      <div class="upper-header">
+        <div class="contact-info">
+
+          <div class="email">
+            <ul>
+              <li><mat-icon class="mail-icon" aria-hidden="false" aria-label="Example home icon"
+                  fontIcon="mail_outline"></mat-icon></li>
+              <li>{{ 'training@milestone.ac.in' }}</li>
+            </ul>
+          </div>
+          <div class="phone">
+            <ul>
+              <li><mat-icon class="phone-icon" aria-hidden="false" aria-label="Example home icon"
+                  fontIcon="local_phone"></mat-icon></li>
+              <li>9819857244</li>
+              <li>/ 8454065555</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="text"> <a href="https://milestone.ac.in/contact/">
+            <p>GET FREE CAREER GUIDANCE</p>
+          </a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lower part in white color with logo and nav items -->
+  <div class="lower-part">
+    <div class="logo"><img width="270" height="40" alt="Milestone Logo" decoding="async"
+        data-src="https://milestone.ac.in/wp-content/uploads/2024/01/cropped-Milestone-Logo.png"
+        class="custom-logo ls-is-cached lazyloaded"
+        src="https://milestone.ac.in/wp-content/uploads/2024/01/cropped-Milestone-Logo.png">
+    </div>
+    <nav>
+      <ul>
+        <button mat-button>Home</button>
+
+        <button mat-button [matMenuTriggerFor]="about" #aboutTrigger="matMenuTrigger"
+          (mouseenter)="aboutTrigger.openMenu()">
+          <div class="nav-items" #aboutTrigger>
+            <span>About</span>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+        </button>
+
+        <button mat-button [matMenuTriggerFor]="courses" #coursesTrigger="matMenuTrigger"
+          (mouseenter)="coursesTrigger.openMenu()">
+          <div class="nav-items">
+            <span>Courses</span>
+            <i class="material-icons">arrow_drop_down</i>
+          </div>
+        </button>
+
+        <button mat-button>100% Job Guranteed</button>
+        <button mat-button>Project Review</button>
+        <button mat-button>Placement</button>
+        <button mat-button>Contact</button>
+        <button mat-button>Search</button>
+        <!-- <li><a routerLink="/">Courses</a></li>
+          <li><a routerLink="/about">100% Job Guranteed</a></li>
+          <li><a routerLink="/contact">Project Review</a></li>
+          <li><a routerLink="/">Placement</a></li>
+          <li><a routerLink="/about">Contact</a></li>
+          <li><a routerLink="/contact">Search</a></li> -->
+        <mat-menu #about="matMenu" class="mat-block">
+          <button mat-menu-item class="menu-item">Mission</button>
+          <button mat-menu-item>FAQ</button>
+          <button mat-menu-item>Events</button>
+          <button mat-menu-item>Blogs</button>
+        </mat-menu>
+
+        <mat-menu #courses="matMenu" class="mat-block">
+          <button mat-menu-item>Data Sciene</button>
+          <button mat-menu-item>Mechanical</button>
+          <button mat-menu-item>Automobile</button>
+          <button mat-menu-item>Cad</button>
+        </mat-menu>
+
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,134 @@
+header {
+    overflow: hidden;
+  }
+  
+  .upper-part {
+    background-color: #ed7525;
+    color: white;
+    padding: 0px 0;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+  
+  .lower-part {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+    padding: 25px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #333; /* Change color to match your design */
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .upper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    margin-left: 8%;
+  }
+  
+  .email, .phone {
+    margin-right: 20px; /* Adjust as needed */
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+  }
+  
+  .email href {
+    color: white;
+  }
+  .text {
+    font-weight: 700;
+    margin-right: 6%;
+    margin-top: 1%;
+    font-family: 'Montserrat', sans-serif !important;
+    color: #faf064;
+    align-items: center;
+  }
+  
+  .phone, .email ul {
+    list-style: none; /* Remove default bullet marks */
+    display: flex; /* Use flexbox to arrange list items */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .phone, .email li {
+    margin-right: 10px; /* Optional: Add spacing between list items */
+  }
+  
+
+
+ 
+
+  .phone ul {
+    list-style: none; /* Remove default bullet marks */
+    display: flex; /* Use flexbox to arrange list items */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .phone li {
+    margin-right: 10px; /* Optional: Add spacing between list items */
+  }
+
+  .mail-icon , .phone-icon {
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+  }
+  a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+  }
+
+  .nav-items{
+    display: inline-flex;
+    align-items: center;
+  }
+  .mat-menu-content .mat-menu-item:hover {
+    background-color: transparent;
+  }
+
+  .menu-item{
+    pointer-events: none;  
+}
+
+.mat-menu-item:hover {
+    background-color: transparent !important;
+  }
+
+.mat-button-toggle-focus-overlay {
+display: none;
+}

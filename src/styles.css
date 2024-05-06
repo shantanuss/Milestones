@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    width:100%;
+    margin: auto;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-menu-content {
+    margin-top: 20px;
+    padding: 8px 0;
+    list-style-type: none;
+    width: 250px;
+    border-top: 2px solid #f25d26;;
+}
+.mat-menu-panel .mat-menu-item:hover {
+    background-color: transparent !important;
+  }
+
+  .mat-menu-item:hover {
+    background-color: transparent !important; /* Set the background color to transparent */
+  }
+ 
+  .cdk-overlay-pane {
+    pointer-events: none !important;
+    background-color: transparent !important;
+  }
+  
+  .mdc-button :hover{
+    color:#f25d26;
+    background-color: transparent;
+  }
